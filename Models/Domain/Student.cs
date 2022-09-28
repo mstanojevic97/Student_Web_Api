@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Student_Web_Api.Models
+namespace Student_Web_Api.Models.Domain
 {
     public class Student
     {
@@ -23,6 +23,6 @@ namespace Student_Web_Api.Models
         [Required]
         [Display(Name = " Date of Birth")]
         public DateTime DateBirth { get; set; }
-        public string? Sex { get; set; }
+        public string Sex { get; set; }
     }
 }

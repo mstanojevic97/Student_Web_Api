@@ -1,0 +1,1 @@
+﻿insert into dbo.Marks (StudentID,CourseId,Mark) Values(1,1,8),(1,2,9),(1,3,10),(2,1,6),(2,2,8),(2,3,7),(3,1,8),(3,2,7),(3,3,10);

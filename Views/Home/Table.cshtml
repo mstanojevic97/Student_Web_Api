@@ -1,0 +1,32 @@
+﻿@using Student_Web_Api.Models.ViewModels;
+@model List<StudentMarks>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                Student
+            </td>
+            @foreach (var item in ViewBag.Courses)
+            {
+                <td>@item.Name</td>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.FullName
+                </td>
+                @foreach (var course in ViewBag.Courses)
+                {
+                    <td>
+                        @(item.Marks.Where(x => x.CourseId == course.Id).Any()? item.Marks.Where(x => x.CourseId == course.Id).First().Mark: "")
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

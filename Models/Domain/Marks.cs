@@ -1,4 +1,4 @@
-﻿namespace Student_Web_Api.Models
+﻿namespace Student_Web_Api.Models.Domain
 {
     public class Marks
     {

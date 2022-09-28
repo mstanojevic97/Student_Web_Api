@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Student_Web_Api.Models
+namespace Student_Web_Api.Models.Domain
 {
     public class Course
     {
         public int Id { get; set; }
-        [Required, MinLength(2,ErrorMessage = "Minimum lenght is 2!")]
+        [Required]
         [Display(Name = "Code")]
         public int Code { get; set; }
         [Required, MinLength(2, ErrorMessage = "Minimum lenght is 2!")]
